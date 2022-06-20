@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600;1,700&display=swap');
+
 .body {
     display: flex;
     flex-direction: column;
@@ -5,7 +7,11 @@
     align-items: center;
     width: 100vw;
     background-color: rgba(244, 251, 255, 0.6);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Lora;
+}
+
+button {
+    font-family: Lora;
 }
 
 .main-menu_bar {
@@ -84,7 +90,7 @@
     margin-left: 620px;
     width: 765px;
     line-height: 30px;
-    font: normal normal normal 16px/36px Lora;
+    font-family:  normal normal normal 16px/36px Lora;
     text-align: left;
     font-weight: 500;
 }
@@ -132,6 +138,12 @@
     margin-left: 30px;
 }
 
+.main2-pizza1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main2-pizza_title {
     padding-left: 30px;
     padding-top: 20px;
@@ -148,7 +160,7 @@
 .main2-pizza_p {
     padding-left: 30px;
     width: 450px;
-    font: normal normal normal 16px/32px 'Open Sans';
+    font: normal normal normal 16px/32px Lora;
 }
 
 .main2-pizza_btn {
@@ -163,8 +175,8 @@
 .main2-pizza_pizza {
     position: absolute;
     right: 140px;
-    width: 409px;
-    height: 416px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
 }
 .main3 {
@@ -334,4 +346,47 @@
 
 .angle1 {
     color: white;
+}
+
+@media (max-width: 900px) {
+    .main-menu_bar {
+        flex-direction: column;
+    }
+
+    .main-menu {
+        margin-left: 0px;
+    }
+
+    .main-menus {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main {
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+
+    .main4 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3,p,span {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px 0px;
+    }
+
+    .main3-title2 {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px;
+    }
 }
